@@ -12,9 +12,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Alaa Ashraf — Frontend Developer",
+  title: "Alaa Ashraf Ramadan — Frontend Developer & UI/UX Designer",
   description:
-    "Frontend Developer specializing in React.js and the MERN stack. Building clean, performant, user-centered web experiences.",
+    "Frontend Developer and UI/UX Designer building responsive web and mobile experiences with React.js and Next.js.",
   keywords: ["Frontend Developer", "React.js", "MERN Stack", "JavaScript", "Next.js", "Cairo"],
   authors: [{ name: "Alaa Ashraf" }],
   openGraph: {

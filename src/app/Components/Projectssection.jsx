@@ -5,15 +5,15 @@ import { useReveal } from '../hooks/useReveal'
 const projects = [
   {
     id: 1,
-    title: 'Trendymart',
+    title: 'TrendyMart',
     subtitle: 'React E-Commerce SPA',
     description:
-      'A single-page e-commerce application built with React.js featuring product browsing, cart management, and user authentication across 8+ interactive screens.',
-    tags: ['React.js', 'React Hooks', 'REST APIs', 'Responsive Design', 'SPA'],
+      'A responsive e-commerce SPA built with React.js, Vite, and Tailwind CSS, with product browsing, cart management, and authentication across 8+ screens.',
+    tags: ['React.js', 'Vite', 'Tailwind CSS', 'REST APIs', 'SPA'],
     highlights: [
-      '99% mobile compatibility across all devices',
-      '25% reduction in page re-renders via optimized Hooks',
-      '8+ interactive screens with smooth client-side routing',
+      'Built product browsing, cart, and authentication experiences across 8+ screens',
+      'Reduced unnecessary re-renders by around 25% using React Hooks and Context',
+      'Designed a responsive interface with Tailwind CSS',
     ],
     github: 'https://github.com/AlaaAshraf17',
     live: 'https://trendy-mart-app.netlify.app/',
@@ -22,20 +22,20 @@ const projects = [
   },
   {
     id: 2,
-    title: 'ZayShop',
-    subtitle: 'Full-Stack E-Commerce Platform',
+    title: 'LearnNova',
+    subtitle: 'Digital Library Management System',
     description:
-      'Graduation project for the Digital Egypt Pioneers Initiative. A full-stack e-commerce web application enabling users to browse products, manage carts, and interact with a dynamic online store.',
-    tags: ['React.js', 'Node.js', 'MongoDB', 'REST APIs', 'MERN Stack'],
+      'A team-built library platform spanning web, backend, and mobile. The project includes an admin dashboard, book and user management, borrowing workflows, and a React Native companion app.',
+    tags: ['React.js', 'React Native', 'Expo Go', 'Node.js', 'MongoDB', 'REST APIs'],
     highlights: [
-      'Led frontend development with 7+ core UI screens',
-      '15% smoother UI interactions via optimized state management',
-      'Full-stack integration with RESTful API architecture',
+      'Built an admin dashboard with 20+ book, user, and borrowing operations',
+      'Developed 4+ React Native screens with real-time search',
+      'Integrated 10+ REST API endpoints across web and mobile',
     ],
     github: 'https://github.com/AlaaAshraf17',
     live: 'https://zay-shop-psi.vercel.app',
     color: '#22c55e',
-    badge: 'Graduation Project',
+    badge: 'Team of 6 · Agile',
     icon: '🏪',
   },
 ]

@@ -5,6 +5,44 @@ body {
   font-size: 18px;
 }
 
+.welcome-screen {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  width: 100%;
+  min-height: 100dvh;
+  padding: 2rem;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  background-color: #090d0b;
+  background-image: linear-gradient(rgba(74,222,128,.045) 1px, transparent 1px), linear-gradient(90deg, rgba(74,222,128,.045) 1px, transparent 1px), radial-gradient(ellipse at 50% 45%, rgba(34,197,94,.15), transparent 55%);
+  background-size: 56px 56px, 56px 56px, auto;
+  animation: welcome-appear .8s ease-out both;
+}
+.welcome-screen-leaving { animation: welcome-exit .9s cubic-bezier(.76,0,.24,1) forwards; pointer-events: none; }
+.welcome-content { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; gap: 2rem; animation: welcome-float 4s ease-in-out infinite; }
+.welcome-kicker { color: #86efac; font: 500 .75rem/1.5 ui-monospace, monospace; letter-spacing: .18em; text-transform: uppercase; }
+.welcome-title { font: 900 clamp(3rem, 10vw, 7.5rem)/.98 var(--font-geist-sans), sans-serif; letter-spacing: -.065em; }
+.welcome-title span { color: transparent; background: linear-gradient(135deg,#bbf7d0,#4ade80 55%,#16a34a); background-clip: text; }
+.welcome-prompt { display: inline-flex; align-items: center; gap: .75rem; color: #9ca3af; font: .8rem ui-monospace, monospace; letter-spacing: .08em; text-transform: uppercase; }
+.welcome-pulse { width: .55rem; height: .55rem; border-radius: 50%; background: #4ade80; box-shadow: 0 0 16px #4ade80; animation: pulse 1.6s ease-in-out infinite; }
+.welcome-orb { position: absolute; width: min(28rem, 65vw); aspect-ratio: 1; border: 1px solid rgba(74,222,128,.11); border-radius: 50%; pointer-events: none; }
+.welcome-orb-one { transform: scale(1.08); animation: welcome-orbit 24s linear infinite; }
+.welcome-orb-two { transform: scale(1.28); border-style: dashed; border-color: rgba(74,222,128,.07); animation: welcome-orbit 38s linear infinite reverse; }
+.welcome-corner { position: absolute; right: 2rem; bottom: 1.5rem; color: rgba(74,222,128,.55); font: 700 1rem ui-monospace, monospace; }
+@keyframes welcome-appear { from { opacity: 0; } to { opacity: 1; } }
+@keyframes welcome-exit { to { transform: translateY(-102%); } }
+@keyframes welcome-float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+@keyframes welcome-orbit { to { rotate: 360deg; } }
+@media (prefers-reduced-motion: reduce) {
+  .welcome-screen, .welcome-content, .welcome-orb, .welcome-pulse { animation-duration: .01ms; animation-iteration-count: 1; }
+  .welcome-screen-leaving { transition: transform .2s ease; animation: none; transform: translateY(-102%); }
+}
+
 /* ── Scroll-reveal animations ── */
 .reveal {
   opacity: 0;

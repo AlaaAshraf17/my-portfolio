@@ -40,7 +40,7 @@ const Hero = () => {
             Alaa<br />
             <span className="text-transparent bg-clip-text"
               style={{ backgroundImage: 'linear-gradient(135deg, #4ade80 0%, #22c55e 50%, #16a34a 100%)' }}>
-              Ashraf
+            Ashraf<br />Ramadan
             </span>
           </h1>
 
@@ -52,11 +52,11 @@ const Hero = () => {
                 sequence={[
                   'Frontend Developer',
                   2000,
-                  'React.js Specialist',
+                  'UI/UX Designer',
                   2000,
-                  'MERN Stack Developer',
+                  'React.js & Next.js Developer',
                   2000,
-                  'UI/UX Enthusiast',
+                  'React Native Developer',
                   2000,
                 ]}
                 wrapper="span"
@@ -67,17 +67,16 @@ const Hero = () => {
           </div>
 
           <p className="reveal delay-500 text-gray-400 text-base lg:text-lg mb-8 leading-relaxed max-w-xl mx-auto sm:mx-0">
-            Specializing in <span className="text-white font-medium">clean, performant React.js</span> interfaces.
-            Building responsive, user-centered web experiences with the{' '}
-            <span className="text-green-400 font-medium">MERN stack</span>.
+            Building responsive web and mobile experiences with <span className="text-white font-medium">React.js and Next.js</span>,
+            combining reliable frontend engineering with thoughtful <span className="text-green-400 font-medium">UI/UX design</span>.
           </p>
 
           {/* Stats row */}
           <div className="reveal delay-500 flex gap-8 mb-10 justify-center sm:justify-start">
             {[
-              { num: '2+', label: 'Projects Shipped' },
-              { num: '99%', label: 'Mobile Compatible' },
-              { num: '25%', label: 'Faster Load Times' },
+              { num: '10+', label: 'LMS Screens' },
+              { num: '20+', label: 'Admin Operations' },
+              { num: '3', label: 'User Roles' },
             ].map(({ num, label }) => (
               <div key={label} className="text-center sm:text-left">
                 <div className="text-2xl font-black text-green-400" style={{ fontFamily: "'Syne', sans-serif" }}>{num}</div>
@@ -98,7 +97,7 @@ const Hero = () => {
                 </span>
               </button>
             </a>
-            <a href="/Alaa_Ashraf_CV.pdf" download>
+            <a href="/Alaa_Ashraf_frontend.pdf" download>
               <button className="group px-8 py-3.5 bg-transparent border border-gray-600 text-gray-300 font-semibold rounded-xl hover:border-green-400 hover:text-green-400 transition-all duration-300 flex items-center gap-2">
                 <svg className="w-4 h-4 group-hover:-translate-y-0.5 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3M3 17V7a2 2 0 012-2h6l2 2h6a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
